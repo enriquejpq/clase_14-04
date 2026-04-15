@@ -21,7 +21,7 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
     if(edad < 18) {
         valido = false;
         mensaje = "Debes tener al menos 18 años";
-        console.log(">>>"+edad)
+        console.log(">>>" + edad)
     }
 
     //validar correo
