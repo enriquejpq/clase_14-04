@@ -3,8 +3,8 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
     e.preventDefault();
 
     let inputs = document.querySelectorAll("#formulario input", "#formulario textarea");
-    let edad = document.getElementById("input[type='number']").value;
-    let email = document.getElementById("input[type='email']").value;
+    let edad = document.querySelector("input[type='number']").value;
+    let email = document.querySelector("input[type='email']").value;
     let valido = true;
     let mensaje ="";
 
