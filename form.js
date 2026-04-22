@@ -18,20 +18,20 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
     
     //validar edad
 
-    if(edad < 18) {
+    if(edad < 21) {
         valido = false;
-        mensaje = "Debes tener al menos 18 años";
+        mensaje = "Edad mínima: 21 años";
         console.log(">>>" + edad)
     }
 
     //validar correo
     if(!email.includes("@") || !email.includes(".")) {
         valido = false;
-        mensaje = "correo inválido";
+        mensaje = "Verificar correo por favor";
     }
 
     if (valido) {
-        window.location.href = "valido.html"
+        window.location.href = "acceso.html"
     
     }else {
         alert(mensaje);
